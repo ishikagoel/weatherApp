@@ -48,11 +48,11 @@ function showError(error)
 function getWeather(latitude,longitude)
 {
     let api=`http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`;
-    fetch(api)
-.then( (response) => (response.json()))
-.then( (result) => {
-console.log(result);
-})
+//     fetch(api)
+// .then( (response) => (response.json()))
+// .then( (result) => {
+// console.log(result);
+// })
 
 
     fetch(api).then(function(response)
