@@ -91,6 +91,8 @@ function CToF(temperature)
 
 //when user clicks on temp element
 tempElement.addEventListener("click",function(){
+    if(weather.temperature.value === undefined)
+    return;
     if(weather.temperature.unit=="celsius")
     {
         let fahrenheit=CToF(weather.temperature.value);
